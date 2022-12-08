@@ -35,7 +35,7 @@ class Bureaucrat
 
 //ostream overload
 std::ostream	&operator<<(std::ostream &out, Bureaucrat *a);
-std::ostream	&operator<<(std::ostream &out, Bureaucrat a);
+std::ostream	&operator<<(std::ostream &out, Bureaucrat &a);
 
 
 #endif
