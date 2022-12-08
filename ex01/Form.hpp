@@ -9,8 +9,8 @@ class Form
 {
 	public:
 			Form();
-			Form(const Form &form);
 			Form(const std::string name, int signGrade, int executeGrade);
+			Form(const Form &form);
 			~Form();
 			Form    &operator=(const Form &form);
 			void				beSigned(Bureaucrat &member);
