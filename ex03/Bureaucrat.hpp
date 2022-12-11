@@ -5,19 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/11 16:13:24 by snair             #+#    #+#             */
-/*   Updated: 2022/12/11 16:13:26 by snair            ###   ########.fr       */
+/*   Created: 2022/12/11 16:15:24 by snair             #+#    #+#             */
+/*   Updated: 2022/12/11 16:15:25 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef	BUREAUCRAT_HPP
 # define BUREAUCRAT_HPP
 
-# include <iostream>
-# include <string>
-# include "Form.hpp"
+#include <iostream>
+#include <string>
+#include "Form.hpp"
 
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -27,11 +27,12 @@ class Bureaucrat
 		    Bureaucrat(const Bureaucrat &member);
 		    ~Bureaucrat();
 		    Bureaucrat  &operator=(const Bureaucrat &member);
-            int					getGrade();
+            int					getGrade() const;
 		    void				increaseGrade();
 		    void				decreaseGrade();
 		    const std::string	getName() const;
-			void				signForm(Form &form);
+			void				signForm(AForm &form);
+			void				executeForm(const AForm &form) const;
 
         //execption classes for grade to high and grade to low    
 		class GradeTooHighException : public std::exception

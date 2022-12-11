@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/11 16:13:45 by snair             #+#    #+#             */
+/*   Updated: 2022/12/11 16:13:46 by snair            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 
@@ -25,7 +37,7 @@ int main(void)
 	{
 		Bureaucrat a("Bob", 135);
 		Bureaucrat b("Billiam", 1);
-		Form c("Stall leasing", 130, 100);
+		Form c("Stall leasing", 100, 130);
 		std::cout << std::endl;
 		std::cout << a;
 		std::cout << b;
