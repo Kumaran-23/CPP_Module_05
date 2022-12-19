@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 16:21:16 by snair             #+#    #+#             */
-/*   Updated: 2022/12/11 16:21:17 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/19 21:13:35 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int main(void)
 			std::cerr << e.what() << std::endl;
 		}
 		std::cout << a;
-		std::cout << b;
+		std::cout << "Cop" << b;
 		delete b;
 		std::cout << std::endl;
 	}
@@ -88,10 +88,10 @@ int main(void)
 			std::cerr << e.what() << std::endl;
 		}
 		std::cout << a;
-		std::cout << b;
+		std::cout << "Park " << b;
 		std::cout << c;
 		std::cout << e;
-		std::cout << d;
+		std::cout << "City " << d;
 		delete b;
 		delete d;
 		std::cout << std::endl;

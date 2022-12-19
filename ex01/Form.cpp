@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 16:13:32 by snair             #+#    #+#             */
-/*   Updated: 2022/12/11 16:13:33 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/19 20:24:51 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ Form::Form(const std::string name, int gradeExecute, int signGrade) : _name(name
 {
 	
 	if (this->_gradeExecution < 1 || this->_signGrade < 1)
-		throw Form::GradeTooLowException();
-	if (this->_gradeExecution > 150 || this->_signGrade > 150)
 		throw Form::GradeTooHighException();
+	if (this->_gradeExecution > 150 || this->_signGrade > 150)
+		throw Form::GradeTooLowException();
 	this->_signed = false;		
 }
 

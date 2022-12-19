@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 16:20:52 by snair             #+#    #+#             */
-/*   Updated: 2022/12/11 16:20:53 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/19 21:07:15 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ AForm	*Intern::makeForm(const std::string form, const std::string target)
 	{
 		if (form == forms[i])
 		{
-			std::cout << "Intern creates " << form << std::endl;
+			std::cout << "Intern creates " << form << " " << target << std::endl;
 			formToMake = validForms[i];
 		}
 		else

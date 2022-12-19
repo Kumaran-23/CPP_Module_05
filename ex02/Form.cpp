@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 16:14:10 by snair             #+#    #+#             */
-/*   Updated: 2022/12/11 16:14:11 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/19 21:02:37 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 //default constructor for AForm Class
 AForm::AForm() : _name("Default"), _gradeExecution(150),
-			_signGrade(150), _signed(false)
+			_signGrade(150), _signed(false), _executed(false)
 {
 
 }
@@ -43,6 +43,7 @@ AForm::AForm(const std::string name, int gradeExecute, int signGrade) : _name(na
 		std::cerr << "Form could not be made becauese: " << e.what() << std::endl;
 	}
 	this->_signed = false;
+	this->_executed = false;
 }
 
 //copy constructor for AForm Class

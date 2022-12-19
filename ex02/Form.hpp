@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/11 16:14:16 by snair             #+#    #+#             */
-/*   Updated: 2022/12/11 16:14:17 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/19 21:02:47 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ class AForm
 			const int			_gradeExecution;
 			const int			_signGrade;
 			bool				_signed;
+			bool				_executed;
 };
 
 std::ostream				&operator<<(std::ostream &output , AForm *form);
